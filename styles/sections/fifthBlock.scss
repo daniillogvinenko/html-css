@@ -1,0 +1,101 @@
+.fifthBlock {
+    background-color: #191919;
+    margin-top: 320px;
+    text-align: center;
+    color: white;
+    padding-bottom: 120px;
+    position: relative;
+    padding-top: 300px;
+
+    @media screen and (max-width: 1205px) {
+        padding-top: 270px;
+    }
+
+    @media screen and (max-width: 900px) {
+        padding-top: 200px;
+    }
+
+    &__top {
+        background: url("../../assets/images/fifthBlock/1.png") center/cover;
+        border-radius: 15px;
+        padding: 95px 0;
+        position: absolute;
+        top: -175px;
+        width: 1125px;
+
+        @media screen and (max-width: 1205px) {
+            width: 850px;
+        }
+
+        @media screen and (max-width: 900px) {
+            width: 540px;
+            padding: 50px 25px;
+        }
+    }
+
+    &__top-title {
+        font-family: var(--accent-font);
+        font-size: 24px;
+        font-weight: 800;
+        width: 632px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (max-width: 900px) {
+            width: unset;
+            margin-left: unset;
+            transform: unset;
+        }
+    }
+
+    &__top-description {
+        font-family: var(--main-font);
+        font-size: 16px;
+        margin-top: 25px;
+        width: 738px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        line-height: 150%;
+        font-weight: 300;
+
+        @media screen and (max-width: 900px) {
+            width: unset;
+            margin-left: unset;
+            transform: unset;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 25px;
+        font-family: var(--main-font);
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 300;
+    }
+
+    &__flex {
+        margin-top: 65px;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+
+        @media screen and (max-width: 900px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    &__item {
+        p {
+            margin-top: 40px;
+            font-family: var(--main-font);
+            font-weight: 300;
+            line-height: 150%;
+            width: 160px;
+
+            @media screen and (max-width: 900px) {
+                width: 240px;
+            }
+        }
+    }
+}
