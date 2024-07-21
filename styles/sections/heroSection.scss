@@ -16,18 +16,22 @@
             position: absolute;
             top: 30px;
 
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
             @media screen and (max-width: 900px) {
                 top: auto;
                 bottom: 35px;
             }
         }
 
-        &-left p:nth-child(1) {
+        &-left span:nth-child(1) {
             font-size: 14px;
             font-weight: 800;
         }
 
-        &-left p:nth-child(2) {
+        &-left span:nth-child(2) {
             font-weight: 300;
             font-size: 14px;
             font-family: var(--main-font);
@@ -36,14 +40,18 @@
         &-center {
             text-align: center;
             flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
         }
 
-        &-center p:nth-child(1) {
+        &-center span:nth-child(1) {
             font-weight: 800;
             font-size: 25px;
         }
 
-        &-center p:nth-child(2) {
+        &-center span:nth-child(2) {
             font-weight: 400;
             font-size: 16px;
             text-transform: uppercase;
@@ -54,18 +62,22 @@
             top: 30px;
             right: 0;
 
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
             @media screen and (max-width: 900px) {
                 top: auto;
                 bottom: 35px;
             }
         }
 
-        &-right p:nth-child(1) {
+        &-right span:nth-child(1) {
             font-size: 14px;
             font-weight: 800;
         }
 
-        &-right p:nth-child(2) {
+        &-right span:nth-child(2) {
             font-weight: 300;
             font-size: 14px;
             font-family: var(--main-font);
